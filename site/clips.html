@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image Generator</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: black;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            margin: 1.5vh 20vw;
+            margin-top: 10vh;
+            text-align: center;
+            background: rgb(39, 188, 209);
+            background: linear-gradient(118deg,
+                    rgba(39, 188, 209, 0.9783263647255778) 0%,
+                    rgba(6, 14, 101, 1) 100%);
+            opacity: 0.9;
+            color: white;
+            padding: 10px 10vw;
+            border-radius: 20px;
+            min-height: 15vh;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        section {
+            height: 50vh;
+            width: 100%;
+            margin-top: -50px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <section></section>
+        <br>
+    </div>
+    <script>
+        const pics = [
+            'url("yash/0DRlwtw.png")',
+            'url("yash/AUDIO-2024-03-16-22-16-13.m4a")',
+            'url("yash/B4WAqWi.png")',
+            'url("yash/desktop.ini")',
+            'url("yash/dhzD97L.png")',
+            'url("yash/EENu1GN.png")',
+            'url("yash/eRDQRuP.png")',
+            'url("yash/eUJnDzf.png")',
+            'url("yash/fPgWCZL.png")',
+            'url("yash/FXMDf4O.png")',
+            'url("yash/IMG_0193.jpeg")',
+            'url("yash/IMG_0302.jpg")',
+            'url("yash/IMG_1310.jpeg")',
+            'url("yash/IMG_1311.jpeg")',
+            'url("yash/IMG_1312.jpeg")',
+            'url("yash/IMG_1313.jpeg")',
+            'url("yash/IMG_1314.jpeg")',
+            'url("yash/IMG_1314.PNG")',
+            'url("yash/IMG_1351.PNG")',
+            'url("yash/IMG_1605.jpeg")',
+            'url("yash/IMG_E1313.JPG")',
+            'url("yash/IMG_E1332.JPG")',
+            'url("yash/IMG_E1351.JPG")',
+            'url("yash/IMG_E1353.JPG")',
+            'url("yash/jV98cXH.png")',
+            'url("yash/longneck.png")',
+            'url("yash/M0NOPv7.png")',
+            'url("yash/M8zEpFR.png")',
+            'url("yash/Screenshot 2023-09-26 083254.png")',
+            'url("yash/Screenshot 2024-02-06 205757.png")',
+            'url("yash/Screenshot 2024-03-30 154555.png")',
+            'url("yash/Screenshot 2024-03-30 155123.png")',
+            'url("yash/Screenshot 2024-03-30 161745.png")',
+            'url("yash/Screenshot 2024-03-30 212615.png")',
+            'url("yash/Screenshot 2024-03-31 212537.png")',
+            'url("yash/Screenshot 2024-06-04 113736.png")',
+            'url("yash/Screenshot 2024-06-04 115152.png")',
+            'url("yash/Screenshot 2024-06-04 115458.png")',
+            'url("yash/Screenshot 2024-06-04 121231.png")',
+            'url("yash/Screenshot 2024-06-04 122358.png")',
+            'url("yash/Screenshot 2024-06-04 122418.png")',
+            'url("yash/Screenshot 2024-06-19 165653.png")',
+            'url("yash/Screenshot 2024-06-19 182144.png")',
+            'url("yash/Screenshot 2024-06-25 at 12-53-56 IMG_0305.png")',
+            'url("yash/Screenshot 2024-07-01 231206.png")',
+            'url("yash/Screenshot 2024-07-05 153036.png")',
+            'url("yash/Screenshot 2024-07-09 161636.png")',
+            'url("yash/Screenshot 2024-07-09 163126.png")',
+            'url("yash/Screenshot 2024-07-28 123200.png")',
+            'url("yash/Screenshot 2024-10-16 095336.png")',
+            'url("yash/ssUSnRh.png")',
+            'url("yash/sxnulhl.png")',
+            'url("yash/tomatosauce.png")',
+            'url("yash/y4cBByJ.png")',
+            'url("yash/yeXPt1v.png")',
+            'url("yash/zp04Rew.png")'
+            ];
+        const pic = document.querySelector('section');
+
+        function showImage() {
+            var a = Math.floor(Math.random() * pics.length);
+            var img = pics[a];
+            pic.style.backgroundImage = img;
+        }
+
+        setInterval(showImage, 1000);
+    </script>
+</body>
+
+</html>
